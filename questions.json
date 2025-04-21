@@ -1,0 +1,602 @@
+[
+  {
+    "question": "Pythonで変数に文字列を代入するには？",
+    "choices": [
+      "let x = 'hello'",
+      "x := 'hello'",
+      "x = 'hello'",
+      "var x = 'hello'"
+    ],
+    "answer_index": 2,
+    "explanation": "Pythonでは代入にキーワードは不要で、x = 'hello' のように書きます。",
+    "used": false
+  },
+  {
+    "question": "数値を文字列に変換するには？",
+    "choices": [
+      "str(42)",
+      "int('42')",
+      "toString(42)",
+      "string(42)"
+    ],
+    "answer_index": 0,
+    "explanation": "str() 関数を使うと、数値を文字列に変換できます。例: str(42) → '42'",
+    "used": false
+  },
+  {
+    "question": "if文の正しい構文はどれ？",
+    "choices": [
+      "if x == 1 then:",
+      "if (x == 1) {",
+      "if x == 1:",
+      "if x = 1:"
+    ],
+    "answer_index": 2,
+    "explanation": "Pythonのif文ではコロンを使ってブロックを示します。例: if x == 1:",
+    "used": false
+  },
+  {
+    "question": "リストの要素数を取得するには？",
+    "choices": [
+      "count(list)",
+      "size(list)",
+      "len(list)",
+      "length(list)"
+    ],
+    "answer_index": 2,
+    "explanation": "Pythonでは len() 関数を使って要素数を取得します。例: len([1,2,3]) → 3",
+    "used": false
+  },
+  {
+    "question": "リストをループするには？",
+    "choices": [
+      "for item of list:",
+      "foreach item in list:",
+      "for item in list:",
+      "loop item list:"
+    ],
+    "answer_index": 2,
+    "explanation": "Pythonのforループは for item in list: のように書きます。",
+    "used": false
+  },
+  {
+    "question": "関数を定義するには？",
+    "choices": [
+      "def my_func():",
+      "function my_func():",
+      "fn my_func() {}",
+      "define my_func():"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは def キーワードを使って関数を定義します。",
+    "used": false
+  },
+  {
+    "question": "辞書から値を取り出すには？",
+    "choices": [
+      "dict.get('key')",
+      "dict['key']",
+      "dict.key",
+      "dict::key"
+    ],
+    "answer_index": 1,
+    "explanation": "Pythonでは dict['key'] または dict.get('key') で値を取得できます。",
+    "used": false
+  },
+  {
+    "question": "リストから要素を削除するには？",
+    "choices": [
+      "list.delete(x)",
+      "list.remove(x)",
+      "list.pop(x)",
+      "del list[x]"
+    ],
+    "answer_index": 1,
+    "explanation": "list.remove(x) を使うと、最初に一致した要素をリストから削除できます。",
+    "used": false
+  },
+  {
+    "question": "文字列を結合するには？",
+    "choices": [
+      "'a' + 'b'",
+      "'a'.join('b')",
+      "concat('a','b')",
+      "'a'.concat('b')"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは + 演算子で文字列を結合します。例: 'a' + 'b' → 'ab'",
+    "used": false
+  },
+  {
+    "question": "Pythonでクラスを定義する正しい構文は？",
+    "choices": [
+      "class MyClass:",
+      "def class MyClass():",
+      "MyClass extends Object",
+      "create class MyClass"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは class MyClass: のように書いてクラスを定義します。",
+    "used": false
+  },
+  {
+    "question": "以下のコードを実行するとエラーになる。原因は？\n\n```python\nx = input(\"数値を入力: \")\nprint(x + 10)\n```",
+    "choices": [
+      "xが未定義",
+      "inputの戻り値が数値でない",
+      "printの文法ミス",
+      "10が未定義"
+    ],
+    "answer_index": 1,
+    "explanation": "input()は文字列を返すため、数値と文字列の加算はエラーになります。int(x)で変換が必要。",
+    "used": false
+  },
+  {
+    "question": "次のコードのエラー原因は？\n\n```python\nmy_list = [1, 2, 3]\nprint(my_list[3])\n```",
+    "choices": [
+      "SyntaxError",
+      "TypeError",
+      "IndexError",
+      "ValueError"
+    ],
+    "answer_index": 2,
+    "explanation": "リストのインデックスは0から始まるので、3番目の要素は存在しません（IndexError）。",
+    "used": false
+  },
+  {
+    "question": "次のコードがSyntaxErrorになるのはなぜ？\n\n```python\nif True\n    print(\"ok\")\n```",
+    "choices": [
+      "Trueが使えない",
+      "if文のあとにコロンが必要",
+      "インデントが間違っている",
+      "print文が古い"
+    ],
+    "answer_index": 1,
+    "explanation": "if文の末尾に「:」が必要です。正しくは `if True:`",
+    "used": false
+  },
+  {
+    "question": "このコードがTypeErrorになるのはなぜ？\n\n```python\nx = [1, 2] + 3\n```",
+    "choices": [
+      "リストの要素が整数だから",
+      "整数との加算が不可能だから",
+      "xが未定義だから",
+      "リストに+演算子が使えないから"
+    ],
+    "answer_index": 1,
+    "explanation": "リストと整数は直接加算できません。リスト同士なら加算可能。",
+    "used": false
+  },
+  {
+    "question": "次のコードのエラー原因は？\n\n```python\ndef greet():\nprint(\"Hello\")\n```",
+    "choices": [
+      "printが未定義",
+      "greetが定義されていない",
+      "関数内のインデントが不足している",
+      "関数名が予約語"
+    ],
+    "answer_index": 2,
+    "explanation": "関数内の処理はインデント（字下げ）が必要です。",
+    "used": false
+  },
+  {
+    "question": "range(5)の返り値の型は？",
+    "choices": [
+      "list",
+      "tuple",
+      "range",
+      "int"
+    ],
+    "answer_index": 2,
+    "explanation": "range()はrange型のオブジェクトを返します。リストにしたい場合は list(range(5))。",
+    "used": false
+  },
+  {
+    "question": "文字列の長さを取得する関数は？",
+    "choices": [
+      "count()",
+      "size()",
+      "length()",
+      "len()"
+    ],
+    "answer_index": 3,
+    "explanation": "len()を使って文字列の長さを取得します。例: len('abc') → 3",
+    "used": false
+  },
+  {
+    "question": "辞書にキーが存在するか調べるには？",
+    "choices": [
+      "dict.has('key')",
+      "'key' in dict",
+      "dict.key_exists('key')",
+      "dict.contains('key')"
+    ],
+    "answer_index": 1,
+    "explanation": "Pythonでは `'key' in dict` でキーの存在を確認できます。",
+    "used": false
+  },
+  {
+    "question": "ターミナルに 'Hello' を表示するには？",
+    "choices": [
+      "echo('Hello')",
+      "say('Hello')",
+      "print('Hello')",
+      "display('Hello')"
+    ],
+    "answer_index": 2,
+    "explanation": "Pythonでは print() を使って表示します。",
+    "used": false
+  },
+  {
+    "question": "複数行コメントを記述する正しい方法は？",
+    "choices": [
+      "// コメント //",
+      "/* コメント */",
+      "'''コメント'''",
+      "<!-- コメント -->"
+    ],
+    "answer_index": 2,
+    "explanation": "Pythonでは `'''` または `\"\"\"` を使って複数行コメントを書けます（実際は文字列扱いですが）。",
+    "used": false
+  },
+  {
+    "question": "モジュールをインポートするには？",
+    "choices": [
+      "import module",
+      "include module",
+      "require module",
+      "using module"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは `import` キーワードを使ってモジュールをインポートします。",
+    "used": false
+  },
+  {
+    "question": "例外処理を行うには？",
+    "choices": [
+      "try-catch",
+      "try-except",
+      "catch-try",
+      "except-try"
+    ],
+    "answer_index": 1,
+    "explanation": "Pythonでは `try` と `except` を使って例外処理を行います。",
+    "used": false
+  },
+  {
+    "question": "ファイルを開くには？",
+    "choices": [
+      "open('file.txt')",
+      "file.open('file.txt')",
+      "open.file('file.txt')",
+      "file('file.txt').open()"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは `open()` 関数を使ってファイルを開きます。例: `open('file.txt')`",
+    "used": false
+  },
+  {
+    "question": "リストをソートするには？",
+    "choices": [
+      "list.sort()",
+      "sort(list)",
+      "list.sorted()",
+      "sorted(list)"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは `list.sort()` または `sorted(list)` を使ってリストをソートします。",
+    "used": false
+  },
+  {
+    "question": "文字列を小文字に変換するには？",
+    "choices": [
+      "str.lower()",
+      "lower(str)",
+      "str.toLower()",
+      "str.lowercase()"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは `str.lower()` を使って文字列を小文字に変換します。",
+    "used": false
+  },
+  {
+    "question": "リストの末尾に要素を追加するには？",
+    "choices": [
+      "list.add(x)",
+      "list.append(x)",
+      "list.push(x)",
+      "list.insert(x)"
+    ],
+    "answer_index": 1,
+    "explanation": "Pythonでは `list.append(x)` を使ってリストの末尾に要素を追加します。",
+    "used": false
+  },
+  {
+    "question": "整数を浮動小数点数に変換するには？",
+    "choices": [
+      "float(int)",
+      "int.float()",
+      "float(int())",
+      "int.toFloat()"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは `float()` 関数を使って整数を浮動小数点数に変換します。例: `float(42)` → `42.0`",
+    "used": false
+  },
+  {
+    "question": "文字列を分割するには？",
+    "choices": [
+      "str.split()",
+      "split(str)",
+      "str.divide()",
+      "str.break()"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは `str.split()` を使って文字列を分割します。例: `'a,b,c'.split(',')` → `['a', 'b', 'c']`",
+    "used": false
+  },
+  {
+    "question": "リストの要素を逆順にするには？",
+    "choices": [
+      "list.reverse()",
+      "reverse(list)",
+      "list.invert()",
+      "invert(list)"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは `list.reverse()` を使ってリストの要素を逆順にします。",
+    "used": false
+  },
+  {
+    "question": "整数の除算を行うには？",
+    "choices": [
+      "int / int",
+      "int // int",
+      "int % int",
+      "int div int"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは `/` 演算子を使って整数の除算を行います。例: `5 / 2` → `2.5`",
+    "used": false
+  },
+  {
+    "question": "文字列を大文字に変換するには？",
+    "choices": [
+      "str.upper()",
+      "upper(str)",
+      "str.toUpper()",
+      "str.uppercase()"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは `str.upper()` を使って文字列を大文字に変換します。",
+    "used": false
+  },
+  {
+    "question": "リストのスライスを取得するには？",
+    "choices": [
+      "list[start:end]",
+      "list.slice(start, end)",
+      "slice(list, start, end)",
+      "list[start:end:step]"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは `list[start:end]` を使ってリストのスライスを取得します。",
+    "used": false
+  },
+  {
+    "question": "辞書のキーを取得するには？",
+    "choices": [
+      "dict.keys()",
+      "keys(dict)",
+      "dict.getKeys()",
+      "dict.keySet()"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは `dict.keys()` を使って辞書のキーを取得します。",
+    "used": false
+  },
+  {
+    "question": "整数を文字列に変換するには？",
+    "choices": [
+      "str(int)",
+      "int.toString()",
+      "int.string()",
+      "string(int)"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは `str()` 関数を使って整数を文字列に変換します。例: `str(42)` → `'42'`",
+    "used": false
+  },
+  {
+    "question": "リストの要素を削除するには？",
+    "choices": [
+      "list.remove(x)",
+      "list.delete(x)",
+      "list.pop(x)",
+      "list.erase(x)"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは `list.remove(x)` を使ってリストから要素を削除します。",
+    "used": false
+  },
+  {
+    "question": "文字列を置換するには？",
+    "choices": [
+      "str.replace(old, new)",
+      "replace(str, old, new)",
+      "str.substitute(old, new)",
+      "str.change(old, new)"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは `str.replace(old, new)` を使って文字列を置換します。",
+    "used": false
+  },
+  {
+    "question": "次のコードがエラーになるのはなぜ？\n\n```python\nx = int(\"abc\")\n```",
+    "choices": [
+      "SyntaxError",
+      "TypeError",
+      "NameError",
+      "ValueError"
+    ],
+    "answer_index": 3,
+    "explanation": "\"abc\" は整数に変換できないため ValueError が発生します。",
+    "used": false
+  },
+  {
+    "question": "次のコードのエラー原因は？\n\n```python\nmy_list = [1, 2, 3]\ndel my_list[5]\n```",
+    "choices": [
+      "TypeError",
+      "ValueError",
+      "IndexError",
+      "KeyError"
+    ],
+    "answer_index": 2,
+    "explanation": "存在しないインデックスを削除しようとすると IndexError になります。",
+    "used": false
+  },
+  {
+    "question": "次のコードを実行するとエラーになります。理由は？\n\n```python\ndef f(x, x):\n    return x + x\n```",
+    "choices": [
+      "引数名が重複している",
+      "returnの書き方が誤っている",
+      "関数名が不適切",
+      "構文ミスがある"
+    ],
+    "answer_index": 0,
+    "explanation": "Pythonでは関数の引数名を重複して定義することはできません（SyntaxError）。",
+    "used": false
+  },
+  {
+    "question": "このコードがKeyErrorになる理由は？\n\n```python\nd = {'a': 1}\nprint(d['b'])\n```",
+    "choices": [
+      "辞書が空だから",
+      "キーが存在しないから",
+      "dが未定義だから",
+      "printが間違っているから"
+    ],
+    "answer_index": 1,
+    "explanation": "存在しないキーを辞書で参照すると KeyError になります。",
+    "used": false
+  },
+  {
+    "question": "次のコードを実行すると何が出力される？\n\n```python\nprint('3' * 2)\n```",
+    "choices": [
+      "6",
+      "'6'",
+      "'33'",
+      "TypeError"
+    ],
+    "answer_index": 2,
+    "explanation": "文字列の '3' を2回繰り返すため、'33' と出力されます。",
+    "used": false
+  },
+  {
+    "question": "次のコードの意味として正しいものは？\n\n```python\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)\n```",
+    "choices": [
+      "[1, 2, 3]",
+      "[1, 2, 3, 4]",
+      "[4]",
+      "TypeError"
+    ],
+    "answer_index": 1,
+    "explanation": "リストは参照渡しされるため、yにappendするとxにも影響します。",
+    "used": false
+  },
+  {
+    "question": "関数のデフォルト引数にリストを使うときに注意すべき点は？",
+    "choices": [
+      "メモリが無駄になる",
+      "リストが毎回新しく生成されない",
+      "リストがタプルに変換される",
+      "速度が遅くなる"
+    ],
+    "answer_index": 1,
+    "explanation": "デフォルト引数のリストは関数定義時に一度だけ生成されるため、再利用されてしまう。",
+    "used": false
+  },
+  {
+    "question": "次のコードの出力は？\n\n```python\nprint(bool([]))\n```",
+    "choices": [
+      "True",
+      "False",
+      "None",
+      "エラー"
+    ],
+    "answer_index": 1,
+    "explanation": "空のリストは False と評価されます。",
+    "used": false
+  },
+  {
+    "question": "`*args`と`**kwargs`の違いは何？",
+    "choices": [
+      "`*args`は可変長のキーワード引数、`**kwargs`は位置引数",
+      "`*args`は位置引数、`**kwargs`は可変長のキーワード引数",
+      "どちらもキーワード引数",
+      "違いはない"
+    ],
+    "answer_index": 1,
+    "explanation": "`*args`は位置引数をタプルで受け取り、`**kwargs`はキーワード引数を辞書で受け取ります。",
+    "used": false
+  },
+  {
+    "question": "以下のコードで変数aの値は？\n\n```python\na = [1, 2, 3]\nb = a[:]\nb.append(4)\n```",
+    "choices": [
+      "[1, 2, 3, 4]",
+      "[1, 2, 3]",
+      "[4]",
+      "エラー"
+    ],
+    "answer_index": 1,
+    "explanation": "a[:] によってコピーされているため、a自体は変更されません。",
+    "used": false
+  },
+  {
+    "question": "次のうち、リスト内包表記の正しい例は？",
+    "choices": [
+      "[for x in range(5): x * 2]",
+      "[x * 2 for x in range(5)]",
+      "for x in range(5) [x * 2]",
+      "(x * 2 for x in range(5))"
+    ],
+    "answer_index": 1,
+    "explanation": "正しい構文は `[x * 2 for x in range(5)]` です。最後の選択肢はジェネレータ式。",
+    "used": false
+  },
+  {
+    "question": "次のコードで `result` の値は？\n\n```python\nresult = 'Py' 'thon'\n```",
+    "choices": [
+      "'Python'",
+      "['Py', 'thon']",
+      "エラー",
+      "'Py' + 'thon'"
+    ],
+    "answer_index": 0,
+    "explanation": "隣接する文字列リテラルは自動的に結合されます。",
+    "used": false
+  },
+  {
+    "question": "次のコードが例外を出すケースは？\n\n```python\nx = {'a': 1, 'b': 2}\nprint(x.get('c'))\n```",
+    "choices": [
+      "常に例外",
+      "キーが存在しないのでKeyError",
+      "Noneが返るので例外は出ない",
+      "TypeErrorになる"
+    ],
+    "answer_index": 2,
+    "explanation": "get()は存在しないキーに対してNoneを返すので、例外は発生しません。",
+    "used": false
+  },
+  {
+    "question": "以下のコードが返す型は？\n\n```python\nx = (i for i in range(3))\n```",
+    "choices": [
+      "list",
+      "tuple",
+      "generator",
+      "range"
+    ],
+    "answer_index": 2,
+    "explanation": "内包表記に括弧を使うとジェネレータになります。",
+    "used": false
+  }
+]

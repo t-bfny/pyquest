@@ -1,0 +1,10 @@
+# Python artifacts
+__pycache__/
+*.pyc
+
+# Streamlit generated files
+.streamlit/
+
+# セーブデータや一時的なスクリプト
+save.json
+addex.py
