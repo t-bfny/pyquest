@@ -2,10 +2,6 @@
 
 Python + Streamlit で作られた、ローカル保存型のクイズアプリです。Pythonの基礎を50問収録しています。
 
-## PLAY
-
-https://pyquest-mhybpd8dgt6bjxhfs86fpy.streamlit.app
-
 ## 機能概要
 
 - 問題に回答すると挑戦した問題数/正解数を保存
@@ -24,6 +20,9 @@ streamlit run main.py
 ```
 python -m streamlit run app.py
 ```
+## PLAY
+
+https://pyquest-mhybpd8dgt6bjxhfs86fpy.streamlit.app
 
 ## 注意
 ※ Python 3.8+ 推奨
@@ -34,3 +33,4 @@ python -m streamlit run app.py
 addex.py は開発補助スクリプトのため、.gitignore に追加済
 
 今後の予定：ユーザ管理・認証機能の追加、問題追加
+
