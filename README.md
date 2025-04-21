@@ -1,4 +1,4 @@
-## pyquest
+# pyquest
 
 Python + Streamlit で作られた、ローカル保存型のクイズアプリです。Pythonの基礎を50問収録しています。
 
